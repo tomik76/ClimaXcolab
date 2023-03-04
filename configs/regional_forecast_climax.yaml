@@ -2,7 +2,7 @@ seed_everything: 42
 
 # ---------------------------- TRAINER -------------------------------------------
 trainer:
-  default_root_dir: ${oc.env:OUTPUT_DIR,/home/t-tungnguyen/ClimaX/exps/regional_forecast_climax}
+  default_root_dir: ${oc.env:OUTPUT_DIR,/content/drive/MyDrive/era5data_npz}
 
   precision: 16
 
@@ -13,7 +13,7 @@ trainer:
 
   min_epochs: 1
   max_epochs: 100
-  enable_progress_bar: true
+  enable_progress_bar: false
 
   sync_batchnorm: True
   enable_checkpointing: True
